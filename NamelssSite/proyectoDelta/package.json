@@ -1,0 +1,15 @@
+{
+  "name": "proyectodelta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"parcel ./src/*.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
