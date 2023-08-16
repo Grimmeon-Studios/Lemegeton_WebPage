@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"parcel ./src/*.html"
+    "dev": "parcel ./src/*.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.9.3"
+  }
 }
