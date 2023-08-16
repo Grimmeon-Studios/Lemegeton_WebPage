@@ -4,15 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/*.html"
-  },
-  "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "clear:dev": "rimraf ./dist",
+    "dev": "npm run clear:dev & parcel ./src/*.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "parcel": "^2.9.3"
+  },
+  "dependencies": {
+    "rimraf": "^5.0.1"
   }
 }
