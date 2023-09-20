@@ -577,4 +577,4 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}]},["l2tSJ","4M6V8"], "4M6V8", "parcelRequire548a")
 
-//# sourceMappingURL=proyectoDelta.59712999.js.map
+//# sourceMappingURL=NamelssSite.59712999.js.map

@@ -1,0 +1,33 @@
+body {
+  background: #1c010a;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  color: #fac7c3;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.box {
+  border: 10000px #f5516c;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  background: #f5516c;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 6px;
+}
+
+img {
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=creditos.34df27b5.css.map */
