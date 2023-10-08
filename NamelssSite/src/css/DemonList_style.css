@@ -1,0 +1,142 @@
+body {
+    background-color: #212121; /* Color naranja en formato hexadecimal */
+}
+
+.ReturnButton{
+    background-color: #007bff; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    border-radius: 5px; /* Borde redondeado */
+    text-decoration: none; /* Quita la subraya de enlace */
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave */
+}
+
+.ReturnButton::hover{
+    background-color: #396ca2; /* Cambia el color de fondo en el hover */
+    color: #fff;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la flex-box */
+.flex-box {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin: 5px;
+    border: 1px solid #212121;
+    cursor: pointer;
+    position: relative;
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Estilos para la imagen */
+.flex-box img {
+    max-width: 206px;
+    max-height: 206px;
+    margin-right: 20px; /* Espacio entre la imagen y el título/texto */
+}
+
+/* Estilos para el título y el texto */
+.flex-box .flex-content {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.flex-box h2 {
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -2px  2px 0 #000,
+        1px  1px 0 #000;
+    font-size: 180%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    transition: padding-top 0.3s ease, padding-bottom 0.3s ease, font-size 0.4s ease, color 0.3s ease;
+}
+
+/* Estilos para el título en hover */
+.flex-box:hover h2 {
+    color: orange;
+    font-size: 220%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* Estilos para el texto */
+.flex-box p {
+    color: white;
+    font-size: 100%;
+    margin: 0; /* Elimina el margen predeterminado */
+    transition: color 0.3s ease;
+}
+
+/* Estilos para el texto en hover */
+.flex-box:hover p {
+    color: orange;
+}
+
+
+/* Estilos para el contenido del flex-box (título y texto) */
+.flex-content {
+    flex: 0.5; /* El contenido ocupa todo el espacio disponible */
+}
+
+.flex-box::before {
+    content: "";
+    background-color: #3b3b3b;
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #212121;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

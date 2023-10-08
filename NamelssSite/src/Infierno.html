@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Demons List</title>
+  <link rel="stylesheet" href="css/Infierno_style.css">
+
+</head>
+<body>
+    <a href="demons.html"> <button class= "ReturnButton">Regresar</button>
+    </a>
+
+<div class="flex-container">
+    <div class="flex-box" data-modal-number="1" onclick="openModal(this)">
+        <div class="flex-content">
+            <h2>El Vestíbulo de los Condenados</h2>
+        </div>
+    </div>
+    <div class="flex-box" data-modal-number="2" onclick="openModal(this)">
+        <div class="flex-content">
+            <h2>Infierno de las Llamas</h2>
+
+        </div>
+    </div>
+    <div class="flex-box" data-modal-number="3" onclick="openModal(this)">
+        <div class="flex-content">
+            <h2>Infierno de la Escarcha</h2>
+
+        </div>
+    </div>
+    <!-- Agrega más flexbox según sea necesario -->
+  
+   <div class="flex-box" data-modal-number="4" onclick="openModal(this)">
+        <div class="flex-content">
+            <h2>Infierno de la Soledad</h2>
+
+        </div>
+    </div>
+  
+  <div class="flex-box" data-modal-number="5" onclick="openModal(this)">
+        <div class="flex-content">
+            <h2>Infierno de la Soberbia</h2>
+
+        </div>
+    </div>
+  
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Título del Modal</h2>
+        <!-- Agrega la imagen dentro del modal -->
+        <img id="modalImage" src="" alt="Imagen del Modal">
+        <p id="modalContent">Contenido del modal.</p>
+    </div>
+</div>
+
+<script  src="js/Infierno_script.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+body {
+    background-color: #212121; /* Color naranja en formato hexadecimal */
+}
+
+.ReturnButton{
+    background-color: #007bff; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    border-radius: 5px; /* Borde redondeado */
+    text-decoration: none; /* Quita la subraya de enlace */
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave */
+}
+
+.ReturnButton::hover{
+    background-color: #396ca2; /* Cambia el color de fondo en el hover */
+    color: #fff;
+}
+
+/* Estilos para el contenedor flex */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center;
+    padding: 40px;
+    margin: 5px;
+    border: 1px solid #212121;
+    cursor: pointer;
+    position: relative;
+    transition: height 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden; /* Evita desbordamiento de contenido en la flexBox */
+}
+
+
+
+/* Estilos para el título dentro de la flex-box en el hover */
+/* Estilos para el título dentro de la flex-box */
+.flex-box h2 {
+  color: white; /* Color del texto interior */
+  text-shadow:
+    -1px -1px 0 #000, /* Sombra superior izquierda (negra) */
+     1px -1px 0 #000, /* Sombra superior derecha (negra) */
+    -2px  2px 0 #000, /* Sombra inferior izquierda (negra) */
+     1px  1px 0 #000; /* Sombra inferior derecha (negra) */
+  font-size: 130%; /* Tamaño de fuente original */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  
+  /* Combina todas las transiciones en una sola propiedad */
+  transition: padding-top 0.3s ease, padding-bottom 0.3s ease, font-size 0.4s ease, color 0.3s ease;
+}
+
+
+/* Estilos para el título dentro de la flex-box en hover */
+.flex-box:hover h2 {
+    color: orange;
+    font-size: 150%; /* Tamaño de fuente en hover (un 20% más grande) */
+    padding-top: 10%;
+    padding-bottom: 10%;
+  
+}
+
+/* Estilos para el contenido del flex-box (título y texto) */
+.flex-content {
+    flex: 0.5; /* El contenido ocupa todo el espacio disponible */
+}
+
+.flex-box[data-modal-number = "1"]::before {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/12/32/hell-735995_1280.jpg'); /* URL de tu imagen de fondo */
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.flex-box[data-modal-number = "2"]::before {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2022/10/02/03/15/vulcanic-landscape-7492624_1280.jpg'); /* URL de tu imagen de fondo */
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.flex-box[data-modal-number = "3"]::before {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/20/11/50/landscape-1994685_1280.jpg'); /* URL de tu imagen de fondo */
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.flex-box[data-modal-number = "4"]::before {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2016/07/19/02/23/old-factory-1527389_1280.jpg'); /* URL de tu imagen de fondo */
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+.flex-box[data-modal-number = "5"]::before {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2022/07/19/20/11/fire-7332965_1280.jpg'); /* URL de tu imagen de fondo */
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #212121;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

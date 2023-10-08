@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Demons List</title>
+  <link rel="stylesheet" href="css/DemonList_style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<a href="demons.html"> <button class= "ReturnButton">Regresar</button>
+</a>
+
+<div class="flex-container">
+    <div class="flex-box" data-modal-number="1" onclick="openModal(this)">
+        <div class="flex-content">
+          <div class="image-container">
+             <img src="imgs/belphegor.jpg" alt="Belfegor">
+          </div>
+          <div class="text-container">
+            <h2>Belfegor</h2>
+            <p>El tendero peresoso</p>
+          </div>
+        </div>
+    </div>
+   <div class="flex-box" data-modal-number="2" onclick="openModal(this)">
+        <div class="flex-content">
+          <div class="image-container">
+             <img src="imgs/bahamot.jpg" alt="Belfegor">
+          </div>
+          <div class="text-container">
+            <h2>Behamut</h2>
+            <p>El gran dragón</p>
+          </div>
+        </div>
+    </div>
+   <div class="flex-box" data-modal-number="3" onclick="openModal(this)">
+        <div class="flex-content">
+          <div class="image-container">
+             <img src="imgs/belial.jpg" alt="Belfegor">
+          </div>
+          <div class="text-container">
+            <h2>Belial</h2>
+            <p>El tendero peresoso</p>
+          </div>
+        </div>
+    </div>
+  
+  <div class="flex-box" data-modal-number="4" onclick="openModal(this)">
+        <div class="flex-content">
+          <div class="image-container">
+             <img src="imgs/imp.jpg" alt="Belfegor">
+          </div>
+          <div class="text-container">
+            <h2>Imp</h2>
+            <p>Pequeño demonio jugetón</p>
+          </div>
+        </div>
+    </div>
+  
+  <div class="flex-box" data-modal-number="1" onclick="openModal(this)">
+        <div class="flex-content">
+          <div class="image-container">
+             <img src="imgs/incubo.png" alt="Belfegor">
+          </div>
+          <div class="text-container">
+            <h2>Íncubo</h2>
+            <p>Gran bruto infernal</p>
+          </div>
+        </div>
+    </div>
+  
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Título del Modal</h2>
+        <!-- Agrega la imagen dentro del modal -->
+        <img id="modalImage" src="" alt="Imagen del Modal">
+        <p id="modalContent">Contenido del modal.</p>
+    </div>
+</div>
+
+</div>
+<!-- partial -->
+  <script  src="js/DemonsList_script.js"></script>
+
+</body>
+</html>
