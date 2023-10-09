@@ -13,6 +13,19 @@ body {
   height: 100%;
   min-height: 100vh;
 }
+.ReturnButton{
+  background-color: #cf2900eb; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Elimina el borde */
+  padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+  border-radius: 5px; /* Borde redondeado */
+  text-decoration: none; /* Quita la subraya de enlace */
+  display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  font-family: "League Spartan", system-ui, sans-serif;
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave */
+}
 
 body {
   display: grid;

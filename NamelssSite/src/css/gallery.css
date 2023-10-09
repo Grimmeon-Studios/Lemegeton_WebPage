@@ -214,10 +214,12 @@ button:focus {
   position: relative;
   font-family: "Montserrat";
   font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));
-  white-space: nowrap;
+  white-space: normal;
   color: #fff;
   width: -moz-fit-content;
   width: fit-content;
+  max-width: 100%; /* Evita que el texto se desborde horizontalmente */
+  overflow-y: auto;
 }
 .info .name,
 .info .location {
