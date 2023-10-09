@@ -1,0 +1,86 @@
+
+
+@import "infiernoDemonios";
+@import url('https://fonts.cdnfonts.com/css/wc-addendum-bta');
+@import url('https://fonts.cdnfonts.com/css/prida65');
+@keyframes cambioTransparencia {
+    0%   {opacity: 0;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+  .container {
+    display:flex;
+    flex-direction: column;
+	flex-wrap: wrap;
+    align-items: center;
+	justify-items: center;
+    color: #fac7c3;
+	line-height: 3;
+  }
+
+  .box {
+    margin: 10px;
+    padding: 10px;
+    border: 10000px #f5516c;
+  }
+  
+h1{
+	font-size: 140px;
+	background: -webkit-linear-gradient(rgb(212, 8, 8), rgb(36, 25, 95));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-family: 'Prida65', sans-serif;
+
+	animation-name: cambioTransparencia;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+  .continuar {
+    background-color: #61081431;
+	background-blend-mode: overlay;
+    color: #e0c2c6; 
+    border: 1.4px inset #a81e2a; 
+    padding: 7px 20px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .continuar:hover {
+	background-color: #8a0000; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  img {
+    border-radius: 10px;
+    height: 200px;
+    max-width: 600px;
+  }
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+    font-family: Arial, sans-serif;
+    /*line-height: 4.5;*/
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	overflow: hidden;
+
+	background-image: url('D:/0DSemestre6/DisenoAdaptable/Lemegeton_WebPage/NamelssSite/src/imgs/TPWBYTR.png');
+    background-repeat: no-repeat;
+    /*background-attachment: scroll;*/
+    background-size: cover;
+	background-position-x: center;
+}
