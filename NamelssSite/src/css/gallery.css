@@ -298,6 +298,35 @@ button:focus {
   transform: scaleX(0);
   transform-origin: left;
 }
+.button-container {
+  position: absolute;
+  bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.button-container a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button-container button {
+  background-color: rgba(255, 128, 0, 0.063); /* Color dorado */
+  color: rgb(137, 5, 5); /* Texto blanco para resaltar */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  padding: 15px 30px; /* Ajusta el espaciado según tus preferencias */
+  font-size: 16px; /* Tamaño del texto */
+  font-family: "Montserrat";
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para destacar del fondo */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.button-container button:hover {
+  background-color: #715b0267; /* Cambia el color de fondo al pasar el mouse */
+}
 @media only screen and (min-width: 800px) {
   :root {
     --card-width: 250px;
