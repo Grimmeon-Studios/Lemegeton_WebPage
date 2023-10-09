@@ -1,9 +1,6 @@
-var script1 = document.createElement('imagesload');
-    script1.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js';
-    script1.async = true;
-    script1.onload = function () {console.clear();
+console.clear();
 
-		const { gsap, imagesLoaded } = window;
+const { gsap, imagesLoaded } = window;
 		
 		const buttons = {
 			prev: document.querySelector(".btn--left"),
@@ -256,6 +253,4 @@ var script1 = document.createElement('imagesload');
 		};
 		
 		waitForImages();
-    };
-    document.body.appendChild(script1);
-	
+		
