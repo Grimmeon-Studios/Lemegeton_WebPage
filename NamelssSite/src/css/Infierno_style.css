@@ -2,6 +2,23 @@ body {
     background-color: #212121; /* Color naranja en formato hexadecimal */
 }
 
+/* Estilos para el contenedor flexbox */
+/* Estilos para el contenedor flexbox */
+.modal-flexbox {
+    display: flex;
+    flex-direction: column; /* Establece el flujo de columna para el contenido */
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: center; /* Alinea horizontalmente el contenido */
+}
+
+/* Estilos para la imagen */
+.modal-flexbox img {
+    max-width: 100%; /* Establece un ancho máximo del 100% para que la imagen se ajuste al tamaño de la pantalla */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
+
+
 .ReturnButton{
     background-color: #cf2900eb; /* Color de fondo */
     color: #ffffff; /* Color del texto */

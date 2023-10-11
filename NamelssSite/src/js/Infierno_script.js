@@ -8,7 +8,7 @@ function openModal(element) {
     // Utiliza el número para determinar qué contenido mostrar
     if (modalNumber === "1") {
         document.getElementById("modalTitle").textContent = "El Vestíbulo de los Condenados";
-        document.getElementById("modalContent").textContent = "Contenido único para el elemento 1.";
+        document.getElementById("modalContent").textContent = "El 0vestíbulo de los condenados es un concepto que proviene de la literatura y la religión, y no tiene una base sólida en las enseñanzas religiosas principales, como la Biblia. Se refiere a un espacio o lugar imaginario donde se cree que las almas de los pecadores o los no redimidos esperan su destino después de la muerte. En la literatura y la cultura popular, se ha utilizado en varias obras para describir un lugar donde las almas están en una especie de limbo o estado intermedio antes de ser juzgadas o enviadas al Infierno.";
       
         document.getElementById("modalImage").src = "https://github.com/Grimmeon-Studios/Lemegeton_WebPage/blob/main/NamelssSite/src/imgs/elVestibulo.jpg?raw=true";
     } else if (modalNumber === "2") {
