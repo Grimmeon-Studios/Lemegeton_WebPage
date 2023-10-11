@@ -27,6 +27,22 @@ button {
   background: none;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 800px) {
+  .cardList__btn {
+    width: 25px; /* Redefine el ancho de los botones */
+    height: 25px; /* Redefine la altura de los botones */
+  }
+
+  .cardList__btn.btn--left {
+    left: 0; /* Ajusta la posición del botón izquierdo */
+  }
+
+  .cardList__btn.btn--right {
+    right: 0; /* Ajusta la posición del botón derecho */
+  }
+}
+
 button:focus {
   outline: none;
   border: none;
