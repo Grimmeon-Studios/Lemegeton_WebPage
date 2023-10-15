@@ -2,53 +2,64 @@
 
 @import "infiernoDemonios";
 @import url('https://fonts.cdnfonts.com/css/wc-addendum-bta');
-@import url('https://fonts.cdnfonts.com/css/prida65');
+@import url('https://fonts.cdnfonts.com/css/prida65');               
+
 @keyframes cambioTransparencia {
-    0%   {opacity: 0;}
+    0%   {opacity: 0.2;}
     50%  {opacity: 1;}
-    100% {opacity: 0;}
+    100% {opacity: 0.2;}
 }
   .container {
     display:flex;
+    font-family: Georgia, serif; 
     flex-direction: column;
-	flex-wrap: wrap;
+	  flex-wrap: wrap;
     align-items: center;
-	justify-items: center;
-    color: #fac7c3;
-	line-height: 3;
+	  justify-items: center;
+    color: rgb(236, 234, 206);
+	  line-height: 3;
+    width: 100%;
+    text-align: center;
   }
 
-  .box {
+  /*.box {
     margin: 10px;
     padding: 10px;
-    border: 10000px #f5516c;
-  }
+    border: 10000px #ebe189;
+  }*/
   
-h1{
-	font-size: 140px;
-	background: -webkit-linear-gradient(rgb(212, 8, 8), rgb(36, 25, 95));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-	font-family: 'Prida65', sans-serif;
+h1 {
+  font-size: 140px;
+  line-height: 1.2;
+  background: -webkit-radial-gradient(circle, rgb(231, 222, 98), rgb(212, 8, 8));
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Prida65', sans-serif;
 
-	animation-name: cambioTransparencia;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-
+  animation-name: cambioTransparencia;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
   .continuar {
-    background-color: #61081431;
-	background-blend-mode: overlay;
-    color: #e0c2c6; 
+    display: block;
+    background-color: #61081431;                                                                                         
+	  background-blend-mode: overlay;
+    color: rgb(236, 234, 206); 
     border: 1.4px inset #a81e2a; 
     padding: 7px 20px; 
     border-radius: 5px; 
     text-decoration: none; 
     display: inline-block; 
     font-size: 16px; 
+    font-family: Georgia, serif; 
     cursor: pointer; 
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
   }
 
   .continuar:hover {
@@ -78,9 +89,72 @@ body {
 	align-items: center;
 	overflow: hidden;
 
-	background-image: url('D:/0Semestre6/DisenoAdaptable/Lemegeton_WebPage/NamelssSite/src/imgs/TPWBYTR.png');
+	background-image: url('D:/0DSemestre6/DisenoAdaptable/Lemegeton_WebPage/NamelssSite/src/imgs/TPWBYTR.png');
+  /*background-image: url("\src\imgs\TPWBYTR.png");
+  background-image: url('D:/0Semestre6/DisenoAdaptable/Lemegeton_WebPage/NamelssSite/src/imgs/TPWBYTR.png');*/
     background-repeat: no-repeat;
     /*background-attachment: scroll;*/
     background-size: cover;
 	background-position-x: center;
 }
+
+@media screen and (max-width: 600px) {
+  
+}
+
+/* Tablet Media Query */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    line-height: 1.5;
+    margin: 10px; /* Adjust this value as needed */
+    margin-bottom: 25px;
+  }
+  
+  
+  h1 {
+    margin-bottom: 20px;  /*Adjust this value to change the position of the button */
+    font-size: 80px; /* Adjust this value as needed */
+  }
+  
+  .continuar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px; /* Adjust this value to change the position of the button */
+  }
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    line-height: 1.5;
+    margin: 10px; /* Adjust this value as needed */
+    margin-bottom: 25px;
+  }
+  
+  
+  h1 {
+    margin-bottom: 20px;  /*Adjust this value to change the position of the button */
+    font-size: 50px; /* Adjust this value as needed */
+    
+  }
+
+  .continuar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px; /* Adjust this value to change the position of the button */
+  }
+}
+
+
