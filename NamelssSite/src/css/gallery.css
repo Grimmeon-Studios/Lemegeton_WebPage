@@ -228,7 +228,7 @@ button:focus {
 }
 .info .text {
   position: relative;
-  font-family: "Montserrat";
+  font-family: Georgia, serif; 
   font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));
   white-space: normal;
   color: #fff;
@@ -296,7 +296,7 @@ button:focus {
 }
 .loading__wrapper .loader--text {
   color: #fff;
-  font-family: "Montserrat";
+  font-family: Georgia, serif; 
   font-weight: 500;
   margin-bottom: 1.4rem;
 }
@@ -316,6 +316,32 @@ button:focus {
   transform: scaleX(0);
   transform-origin: left;
 }
+
+/*
+.continuar {
+  display: block;
+  background-color: #61081431;                                                                                         
+  background-blend-mode: overlay;
+  color: rgb(236, 234, 206); 
+  border: 1.4px inset #a81e2a; 
+  padding: 7px 20px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  font-family: Georgia, serif; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, color 0.3s ease;   
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+}
+
+.continuar:hover {
+background-color: #8a0000; /* Cambia el color de fondo al pasar el mouse 
+}
+*/
+
 .button-container {
   position: absolute;
   bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
@@ -336,7 +362,7 @@ button:focus {
   border-radius: 50%; /* Hace que el botón sea redondo */
   padding: 15px 30px; /* Ajusta el espaciado según tus preferencias */
   font-size: 16px; /* Tamaño del texto */
-  font-family: "Montserrat";
+  font-family: Georgia, serif; 
   cursor: pointer;
   box-shadow: 0 2px 4px #00000033; /* Sombra para destacar del fondo */
   transition: background-color 0.3s ease; /* Transición suave del color de fondo */
@@ -351,3 +377,47 @@ button:focus {
     --card-height: 400px;
   }
 }/*# sourceMappingURL=gallery.css.map */
+
+
+/* Tablet Media Query 
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .cardList__btn {
+    width: 25px; /* Redefine el ancho de los botones 
+    height: 25px; /* Redefine la altura de los botones 
+  }
+
+  .cardList__btn.btn--left {
+    left: 0; /* Ajusta la posición del botón izquierdo 
+  }
+
+  .cardList__btn.btn--right {
+    right: 0; /* Ajusta la posición del botón derecho 
+  }
+
+  :root {
+    --card-width: 250px;
+    --card-height: 400px;
+  }
+}
+
+/* Mobile Media Query 
+@media only screen and (max-width: 600px) {
+  .cardList__btn {
+    width: 25px; /* Redefine el ancho de los botones 
+    height: 25px; /* Redefine la altura de los botones 
+  }
+
+  .cardList__btn.btn--left {
+    left: 0; /* Ajusta la posición del botón izquierdo 
+  }
+
+  .cardList__btn.btn--right {
+    right: 0; /* Ajusta la posición del botón derecho 
+  }
+
+  :root {
+    --card-width: 250px;
+    --card-height: 400px;
+  }
+}
+*/

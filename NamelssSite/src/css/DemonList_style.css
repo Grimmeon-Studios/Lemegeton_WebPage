@@ -17,9 +17,8 @@ body {
     height: auto; /* Mantiene la proporción de aspecto de la imagen */
 }
 
-
-
 .ReturnButton{
+    
     background-color: #cf7c00eb; /* Color de fondo */
     color: #ffffff; /* Color del texto */
     border: none; /* Elimina el borde */
@@ -28,6 +27,7 @@ body {
     text-decoration: none; /* Quita la subraya de enlace */
     display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
     font-size: 16px; /* Tamaño de fuente */
+    font-family: Georgia, serif; 
     cursor: pointer; /* Cambia el cursor al pasar el ratón */
     transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave */
 }
@@ -79,6 +79,7 @@ body {
         -2px  2px 0 #000,
         1px  1px 0 #000;
     font-size: 180%;
+    font-family: Georgia, serif;
     padding-top: 5%;
     padding-bottom: 5%;
     transition: padding-top 0.3s ease, padding-bottom 0.3s ease, font-size 0.4s ease, color 0.3s ease;
@@ -88,6 +89,7 @@ body {
 .flex-box:hover h2 {
     color: orange;
     font-size: 220%;
+    font-family: Georgia, serif;
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -96,6 +98,7 @@ body {
 .flex-box p {
     color: white;
     font-size: 100%;
+    font-family: Georgia, serif;
     margin: 0; /* Elimina el margen predeterminado */
     transition: color 0.3s ease;
 }
@@ -155,5 +158,16 @@ body {
     top: 10px;
     right: 10px;
     font-size: 1.5rem;
+    font-family: Georgia, serif;
     cursor: pointer;
+}
+
+/* Tablet Media Query */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+}
+  
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+
 }

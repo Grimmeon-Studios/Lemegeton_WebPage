@@ -98,10 +98,6 @@ body {
 	background-position-x: center;
 }
 
-@media screen and (max-width: 600px) {
-  
-}
-
 /* Tablet Media Query */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .container {

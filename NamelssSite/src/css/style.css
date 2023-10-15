@@ -14,23 +14,32 @@ body {
   min-height: 100vh;
 }
 .ReturnButton{
-  background-color: #cf2900eb; /* Color de fondo */
-  color: #ffffff; /* Color del texto */
-  border: none; /* Elimina el borde */
-  padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
-  border-radius: 5px; /* Borde redondeado */
-  text-decoration: none; /* Quita la subraya de enlace */
-  display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
-  font-size: 16px; /* Tamaño de fuente */
-  font-family: "League Spartan", system-ui, sans-serif;
-  cursor: pointer; /* Cambia el cursor al pasar el ratón */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave */
+  display: block;
+  background-color: #61081431;                                                                                         
+  background-blend-mode: overlay;
+  color: rgb(236, 234, 206); 
+  border: 1.4px inset #a81e2a; 
+  padding: 7px 20px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  font-family: Georgia, serif; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, color 0.3s ease;   
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.ReturnButton:hover {
+background-color: #8a0000; /* Cambia el color de fondo al pasar el mouse */
 }
 
 body {
   display: grid;
   place-items: center;
-  font-family: "League Spartan", system-ui, sans-serif;
+  font-family: Georgia, serif; 
   font-size: 1.2rem;
   line-height: 1.2;
   background-color: #212121;
@@ -179,3 +188,26 @@ ul {
   --lightness: 95%;
   background: hsla(var(--hsl), 0.1);
 }
+
+/* Tablet Media Query */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .main__heading {
+    font-size: 1.5em; /* Ajusta este valor según sea necesario */
+  }
+
+  body{
+    font-size: 1em;
+  }
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 600px) {
+  .main__heading {
+    font-size: 1em; /* Ajusta este valor según sea necesario */
+  }
+
+  body{
+    font-size: 1em;
+  }
+}
+
