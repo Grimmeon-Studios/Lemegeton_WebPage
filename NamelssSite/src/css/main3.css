@@ -1,6 +1,6 @@
 
 
-@import "infiernoDemonios";
+/*@import "../Infierno-Demonios";*/
 @import url('https://fonts.cdnfonts.com/css/wc-addendum-bta');
 @import url('https://fonts.cdnfonts.com/css/prida65');               
 
@@ -89,7 +89,7 @@ body {
 	align-items: center;
 	overflow: hidden;
 
-	background-image: url('D:/0DSemestre6/DisenoAdaptable/Lemegeton_WebPage/NamelssSite/src/imgs/TPWBYTR.png');
+	background-image: url("../imgs/TPWBYTR.png");
   /*background-image: url("\src\imgs\TPWBYTR.png");
   background-image: url('D:/0Semestre6/DisenoAdaptable/Lemegeton_WebPage/NamelssSite/src/imgs/TPWBYTR.png');*/
     background-repeat: no-repeat;

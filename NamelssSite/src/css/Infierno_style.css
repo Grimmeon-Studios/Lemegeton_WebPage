@@ -33,7 +33,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave */
 }
 
-.ReturnButton::hover{
+.ReturnButton:hover{
     background-color: #396ca2; /* Cambia el color de fondo en el hover */
     color: #fff;
 }

@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "clear:dev": "rimraf ./dist",
-    "dev": "npm run clear:dev & parcel ./src/*.html"
+    "dev": "npm run clear:dev & parcel ./src/*.html",
+    "build-temp": "npm parcel build ./src/*.html --public-url ./",
+    "build-complete": "npm parcel build ./src/*.html --public-url ./"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",

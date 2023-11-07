@@ -1,0 +1,174 @@
+body {
+  background-color: #212121;
+}
+
+.modal-flexbox {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.modal-flexbox img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ReturnButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #cf2900eb;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+  display: inline-block;
+}
+
+.ReturnButton:hover {
+  color: #fff;
+  background-color: #396ca2;
+}
+
+.flex-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.flex-box {
+  cursor: pointer;
+  border: 1px solid #212121;
+  border-radius: 15px;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 40px;
+  transition: height .3s, box-shadow .3s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.flex-box h2 {
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -2px 2px #000, 1px 1px #000;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: Georgia, serif;
+  font-size: 130%;
+  transition: padding-top .3s, padding-bottom .3s, font-size .4s, color .3s;
+}
+
+.flex-box:hover h2 {
+  color: orange;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: Georgia, serif;
+  font-size: 150%;
+}
+
+.flex-content {
+  flex: .5;
+}
+
+.flex-box[data-modal-number="1"]:before {
+  content: "";
+  filter: blur(5px);
+  z-index: -1;
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/12/32/hell-735995_1280.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flex-box[data-modal-number="2"]:before {
+  content: "";
+  filter: blur(5px);
+  z-index: -1;
+  background-image: url("https://cdn.pixabay.com/photo/2022/10/02/03/15/vulcanic-landscape-7492624_1280.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flex-box[data-modal-number="3"]:before {
+  content: "";
+  filter: blur(5px);
+  z-index: -1;
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/20/11/50/landscape-1994685_1280.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flex-box[data-modal-number="4"]:before {
+  content: "";
+  filter: blur(5px);
+  z-index: -1;
+  background-image: url("https://cdn.pixabay.com/photo/2016/07/19/02/23/old-factory-1527389_1280.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flex-box[data-modal-number="5"]:before {
+  content: "";
+  filter: blur(5px);
+  z-index: -1;
+  background-image: url("https://cdn.pixabay.com/photo/2022/07/19/20/11/fire-7332965_1280.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  z-index: 1;
+  background-color: #000000b3;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  color: #fff;
+  background-color: #212121;
+  border-radius: 5px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.close {
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/*# sourceMappingURL=Infierno.5838c7be.css.map */

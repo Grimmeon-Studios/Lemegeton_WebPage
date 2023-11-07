@@ -1,0 +1,198 @@
+@import "https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800;900&display=swap";
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.ReturnButton {
+  background-blend-mode: overlay;
+  color: #eceace;
+  cursor: pointer;
+  background-color: #61081431;
+  border: 1.4px inset #a81e2a;
+  border-radius: 5px;
+  padding: 7px 20px;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color .3s, color .3s;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.ReturnButton:hover {
+  background-color: #8a0000;
+}
+
+body {
+  color: #ddd;
+  background-color: #212121;
+  place-items: center;
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  display: grid;
+}
+
+ul {
+  list-style: none;
+}
+
+.main {
+  max-width: 75rem;
+  padding: 3em 1.5em;
+}
+
+.main__heading {
+  text-align: center;
+  color: #eceff1;
+  margin-bottom: .75em;
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+.cards {
+  position: relative;
+}
+
+.cards__inner {
+  flex-wrap: wrap;
+  gap: 2.5em;
+  display: flex;
+}
+
+.card {
+  --flow-space: .5em;
+  --hsl: var(--hue), var(--saturation), var(--lightness);
+  color: #eceff1;
+  background-color: #2b2b2b;
+  border: 1px solid #eceff133;
+  border-radius: 15px;
+  flex: 14rem;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: start;
+  gap: 1.25em;
+  padding: 1.5em 2em;
+  display: grid;
+}
+
+.card:first-child {
+  --hue: 28;
+  --saturation: 86%;
+  --lightness: 51.37%;
+}
+
+.card:nth-child(2) {
+  --hue: 2;
+  --saturation: 90%;
+  --lightness: 61.76%;
+}
+
+.card:nth-child(3) {
+  --hue: 338.69;
+  --saturation: 100%;
+  --lightness: 48.04%;
+}
+
+.card__bullets {
+  line-height: 1.4;
+}
+
+.card__bullets li:before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='16' title='check' fill='%23dddddd'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
+  margin-right: 1ch;
+  display: inline-block;
+  transform: translateY(.25ch);
+}
+
+.card__heading {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+
+.card__price {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1.25em);
+}
+
+.cta {
+  text-align: center;
+  color: #fff;
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  align-self: end;
+  margin: 1em 0 .5em;
+  padding: .7em;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+
+.overlay {
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  opacity: var(--opacity, 0);
+  -webkit-mask: radial-gradient(25rem 25rem at var(--x) var(--y), #000 1%, transparent 50%);
+  -webkit-mask: radial-gradient(25rem 25rem at var(--x) var(--y), #000 1%, transparent 50%);
+  mask: radial-gradient(25rem 25rem at var(--x) var(--y), #000 1%, transparent 50%);
+  will-change: mask;
+  transition: -webkit-mask .4s, mask .4s;
+  position: absolute;
+  inset: 0;
+}
+
+.overlay .card {
+  background-color: hsla(var(--hsl), .15);
+  border-color: hsla(var(--hsl), 1);
+  box-shadow: 0 0 0 1px inset hsl(var(--hsl));
+}
+
+.overlay .cta {
+  background-color: hsl(var(--hsl));
+  box-shadow: 0 0 0 1px hsl(var(--hsl));
+  grid-row: -1;
+  width: 100%;
+  display: block;
+}
+
+:not(.overlay) > .card {
+  will-change: background;
+  transition: background .4s;
+}
+
+:not(.overlay) > .card:hover {
+  --lightness: 95%;
+  background: hsla(var(--hsl), .1);
+}
+
+@media only screen and (width >= 601px) and (width <= 1024px) {
+  .main__heading {
+    font-size: 1.5em;
+  }
+
+  body {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .main__heading, body {
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=Infierno-Demonios.c92073ef.css.map */
