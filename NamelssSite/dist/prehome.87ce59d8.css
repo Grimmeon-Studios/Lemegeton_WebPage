@@ -27,7 +27,6 @@
 
 h1 {
   background: -webkit-radial-gradient(circle, #e7de62, #d40808) fixed;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;

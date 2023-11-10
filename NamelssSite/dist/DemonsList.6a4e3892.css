@@ -28,7 +28,7 @@ body {
   display: inline-block;
 }
 
-.ReturnButton::hover {
+.ReturnButton:hover {
   color: #fff;
   background-color: #396ca2;
 }
